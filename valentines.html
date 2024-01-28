@@ -40,9 +40,22 @@
             margin-top: 20px; /* Adjust the margin as needed */
         }
 
+        .image-container button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
         .image-container img {
             width: 100px; /* Adjust the width of the images as needed */
             border-radius: 5px; /* Optional: Add rounded corners */
+            display: block;
+            margin: 0 auto;
+        }
+
+        .button-text {
+            color: white;
+            margin-top: 5px; /* Adjust the margin as needed */
         }
     </style>
 </head>
@@ -55,11 +68,31 @@
         <p>Will you be my valentine?</p>
         
         <div class="image-container">
-            <img src="luz1.jpg" alt="Luz 1">
-            <img src="luz2.jpg" alt="Luz 2">
-            <img src="luz3.jpg" alt="Luz 3">
+            <button onclick="redirectToHappyPage()">
+                <img src="luz1.jpg" alt="Luz 1">
+                <p class="button-text">YES!!!</p>
+            </button>
+            <button onclick="redirectToRetryPage()">
+                <img src="luz2.jpg" alt="Luz 2">
+                <p class="button-text">maybe...</p>
+            </button>
+            <button onclick="redirectToSadPage()">
+                <img src="luz3.jpg" alt="Luz 3">
+                <p class="button-text">NO >:(</p>
+            </button>
         </div>
     </div>
+
+    <script>
+        function redirectToHappyPage() {
+            window.location.href = 'happy.html';
+        }
+        function redirectToRetryPage() {
+            window.location.href = 'tryagain.html';
+        }
+        function redirectToSadPage() {
+            window.location.href = 'sad.html';
+        }
+    </script>
 </body>
 </html>
-
