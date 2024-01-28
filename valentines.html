@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Background Page with Hearts</title>
+    <style>
+        body {
+            background-color: pink;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        .content {
+            text-align: center;
+            padding: 50px;
+            color: white;
+        }
+
+        .heart {
+            position: absolute;
+            width: 50px; /* Adjust the width as needed */
+            top: 10px; /* Adjust the top position as needed */
+        }
+
+        .heart-left {
+            left: 10px; /* Adjust the left position for the upper-left heart */
+            transform: scaleX(-1); /* Mirror horizontally */
+        }
+
+        .heart-right {
+            right: 10px; /* Adjust the right position for the upper-right heart */
+        }
+    </style>
+</head>
+<body>
+    <img src="heart.png" alt="Heart" class="heart heart-left">
+    <img src="heart.png" alt="Heart" class="heart heart-right">
+
+    <div class="content">
+        <h1>Welcome to the Pink Background Page with Mirrored Heart!</h1>
+        <p>This is a simple HTML page with a pink background and mirrored heart images at the upper left and upper right.</p>
+    </div>
+</body>
+</html>
